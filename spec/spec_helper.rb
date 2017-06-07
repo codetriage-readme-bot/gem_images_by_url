@@ -1,8 +1,5 @@
 require 'bundler/setup'
 require 'images_by_url'
-require 'open-uri'
-require 'nokogiri'
-require 'json'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
