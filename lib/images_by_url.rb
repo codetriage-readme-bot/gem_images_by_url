@@ -27,6 +27,7 @@ module ImagesByUrl
       end
       JSON.pretty_generate(showings)
     end
+
     def parser_alser
       url = 'https://www.alser.kz/?cityName=abay'
       html = open(url)
