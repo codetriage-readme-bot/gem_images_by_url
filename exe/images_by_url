@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require 'images_by_url'
