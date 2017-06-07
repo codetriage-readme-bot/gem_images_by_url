@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+foobar = ImagesByUrl::ParseImagesByUrl.new
+
+foobar.list_links_images(URL) (return list of links images in json)
 
 ## Development
 

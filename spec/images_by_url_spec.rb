@@ -5,19 +5,14 @@ RSpec.describe ImagesByUrl do
     expect(ImagesByUrl::VERSION).not_to be nil
   end
 
-  context 'Module::Class.method'do
+  context 'Module::Class.method' do
     let(:result) { ImagesByUrl::ParseImagesByUrl.new }
 
     it 'does something useful' do
-      expect(result.content).not_to be_nil
-    end
-
-    it 'does something useful' do
-      expect(result.parser_alser).not_to be_nil
-    end
-
-    it 'does something useful' do
-      expect(result.check_sity).to match('Абай')
+      url = 'http://livetv141.net/'
+      links = JSON.parse(result.list_links_images(url))[0]['link']
+      puts links
+      expect(links).to match(/\.(png|jpg|gif)$/)
     end
   end
 end
