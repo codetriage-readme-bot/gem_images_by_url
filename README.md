@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/Mifrill/gem_images_by_url.svg?branch=master)](https://travis-ci.org/Mifrill/gem_images_by_url)
 [![Quality](http://img.shields.io/codeclimate/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/Mifrill/gem_images_by_url)
 [![codecov](https://codecov.io/gh/Mifrill/gem_images_by_url/branch/master/graph/badge.svg)](https://codecov.io/gh/Mifrill/gem_images_by_url)
+[![Dependency Status](https://gemnasium.com/badges/github.com/Mifrill/gem_images_by_url.svg)](https://gemnasium.com/github.com/Mifrill/gem_images_by_url)
 
 # ImagesByUrl
 
