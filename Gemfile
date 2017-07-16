@@ -5,3 +5,4 @@ gemspec
 
 gem 'nokogiri'
 gem 'rspec'
+gem 'codecov', require: false, group: :test
