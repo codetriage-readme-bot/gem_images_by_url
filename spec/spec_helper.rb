@@ -10,8 +10,23 @@ RSpec.configure do |config|
   end
 end
 
-require 'simplecov'
-SimpleCov.start
+if ENV['BROWSER_MIN'] == 'on'
+  require 'headless'
+  headless = Headless.new
+  headless.start
+end
 
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
+if ENV['ENV'] == 'test'
+  puts 'CodeCoverage Enabled'
+  require 'simplecov'
+  if ENV['CI']
+    require 'codecov'
+    require 'codeclimate-test-reporter'
+    SimpleCov.start
+    SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  else
+    SimpleCov.start do
+      add_filter 'some/path'
+    end
+  end
+end

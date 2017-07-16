@@ -3,6 +3,37 @@ dist: trusty
 notifications:
   email: false
 language: ruby
+cache:
+  bundler: true
 rvm:
   - 2.4.1
-script: bundle exec rspec
+before_script:
+  - bundle install
+  - gem install ./images_by_url-0.1.1.gem
+
+  # Install dependencies.
+  - sudo apt-get update
+  - sudo apt-get install -y openjdk-8-jre-headless xvfb libxi6 libgconf-2-4
+
+  # Install Chrome.
+  - wget -N https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/
+  - sudo dpkg -i --force-depends ~/google-chrome-stable_current_amd64.deb
+  - sudo apt-get -f install -y
+  - sudo dpkg -i --force-depends ~/google-chrome-stable_current_amd64.deb
+
+  # Install ChromeDriver.
+  - wget -N http://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+  # Install Selenium.
+  - wget -N http://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar -P ~/
+  - sudo mv -f ~/selenium-server-standalone-3.0.1.jar /usr/local/share/
+  - sudo chmod +x /usr/local/share/selenium-server-standalone-3.0.1.jar
+  - sudo ln -s /usr/local/share/selenium-server-standalone-3.0.1.jar /usr/local/bin/selenium-server-standalone-3.0.1.jar
+script:
+  - BROWSER_MIN=on ENV=test bundle exec rspec
+  - CODECLIMATE_REPO_TOKEN=431e13a58615c311ea53fd104db553d633d96018687949d0b3423ace9b4ccf47 bundle exec codeclimate-test-reporter
