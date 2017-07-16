@@ -9,7 +9,7 @@ rvm:
   - 2.4.1
 before_script:
   - bundle install
-  - gem install ./images_by_url-0.1.1.gem
+  - gem install images_by_url
 
   # Install dependencies.
   - sudo apt-get update
