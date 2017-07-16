@@ -1,4 +1,4 @@
-require 'bundler/setup'
+#require 'bundler/setup'
 require 'images_by_url'
 
 RSpec.configure do |config|
