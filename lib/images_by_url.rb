@@ -1,5 +1,5 @@
 require 'images_by_url/version'
-require 'images_by_url/images_by_url'
+require 'images_by_url'
 require 'open-uri'
 require 'nokogiri'
 require 'json'
