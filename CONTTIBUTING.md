@@ -1,6 +1,6 @@
 ## Reporting Issues
 
-You can report issues at https://github.com/mifrill/images_by_url/issues
+You can report issues at https://github.com/Mifrill/gem_images_by_url/issues
 
 Search existing issues for your problem, chances are someone else already reported it.
 
@@ -25,7 +25,7 @@ Thanks!
 
 To fetch & test the library for development, do:
 
-    $ git clone https://github.com/mifrill/images_by_url.git
+    $ git clone https://github.com/Mifrill/gem_images_by_url.git
     $ cd images_by_url
     $ bundle
     $ rspec
