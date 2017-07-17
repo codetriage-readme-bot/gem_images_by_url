@@ -16,17 +16,22 @@ if ENV['BROWSER_MIN'] == 'on'
   headless.start
 end
 
+=begin
 if ENV['ENV'] == 'test'
   puts 'CodeCoverage Enabled'
   require 'simplecov'
+  SimpleCov.profiles.define 'gem' do
+    add_group 'Libraries', 'lib'
+  end
   if ENV['CI']
     require 'codecov'
     require 'codeclimate-test-reporter'
-    SimpleCov.start
+    SimpleCov.start 'gem'
     SimpleCov.formatter = SimpleCov::Formatter::Codecov
   else
-    SimpleCov.start do
+    SimpleCov.start 'gem' do
       add_filter 'some/path'
     end
   end
 end
+=end

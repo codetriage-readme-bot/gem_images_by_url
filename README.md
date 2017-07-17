@@ -1,8 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/images_by_url.svg)](https://badge.fury.io/rb/images_by_url)
 [![Build Status](https://travis-ci.org/Mifrill/gem_images_by_url.svg?branch=master)](https://travis-ci.org/Mifrill/gem_images_by_url)
 [![Quality](http://img.shields.io/codeclimate/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/Mifrill/gem_images_by_url)
-[![Coverage Status](https://img.shields.io/codeclimate/coverage/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/mifrill/gem_images_by_url)
-[![codecov](https://codecov.io/gh/Mifrill/gem_images_by_url/branch/master/graph/badge.svg)](https://codecov.io/gh/Mifrill/gem_images_by_url)
 [![Inline docs](http://inch-ci.org/github/Mifrill/gem_images_by_url.svg?branch=master)](http://inch-ci.org/github/Mifrill/gem_images_by_url)
 [![Dependency Status](https://gemnasium.com/badges/github.com/Mifrill/gem_images_by_url.svg)](https://gemnasium.com/github.com/Mifrill/gem_images_by_url)
 
@@ -40,10 +38,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/images_by_url. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mifrill/images_by_url. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

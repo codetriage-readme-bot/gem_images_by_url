@@ -36,4 +36,4 @@ before_script:
   - sudo ln -s /usr/local/share/selenium-server-standalone-3.0.1.jar /usr/local/bin/selenium-server-standalone-3.0.1.jar
 script:
   - BROWSER_MIN=on ENV=test bundle exec rspec
-  - CODECLIMATE_REPO_TOKEN=431e13a58615c311ea53fd104db553d633d96018687949d0b3423ace9b4ccf47 bundle exec codeclimate-test-reporter
+  #- CODECLIMATE_REPO_TOKEN=431e13a58615c311ea53fd104db553d633d96018687949d0b3423ace9b4ccf47 bundle exec codeclimate-test-reporter
