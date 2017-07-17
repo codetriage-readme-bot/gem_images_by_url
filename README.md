@@ -5,6 +5,7 @@
 [![codecov](https://codecov.io/gh/Mifrill/gem_images_by_url/branch/master/graph/badge.svg)](https://codecov.io/gh/Mifrill/gem_images_by_url)
 [![Inline docs](http://inch-ci.org/github/Mifrill/gem_images_by_url.svg?branch=master)](http://inch-ci.org/github/Mifrill/gem_images_by_url)
 [![Dependency Status](https://gemnasium.com/badges/github.com/Mifrill/gem_images_by_url.svg)](https://gemnasium.com/github.com/Mifrill/gem_images_by_url)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url?ref=badge_shield)
 
 # ImagesByUrl
 
@@ -47,3 +48,6 @@ See the [contributing guide](https://github.com/Mifrill/gem_images_by_url/blob/m
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url?ref=badge_large)
