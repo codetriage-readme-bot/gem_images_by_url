@@ -11,4 +11,4 @@ Rake::ExtensionTask.new('images_by_url') do |ext|
   ext.lib_dir = 'lib/images_by_url'
 end
 
-task default: [:clobber, :compile, :spec]
+task default: %i[clobber compile spec]

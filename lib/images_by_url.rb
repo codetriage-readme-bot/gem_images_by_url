@@ -13,7 +13,7 @@ module ImagesByUrl
       doc.css('img').each do |showing|
         img = showing.attr('src')
         showings.push(
-           link: img
+          link: img
         )
       end
       JSON.pretty_generate(showings)
