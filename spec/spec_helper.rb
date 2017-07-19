@@ -1,6 +1,3 @@
-require 'bundler/setup'
-require 'images_by_url'
-
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = '.rspec_status'
@@ -16,7 +13,6 @@ if ENV['BROWSER_MIN'] == 'on'
   headless.start
 end
 
-=begin
 if ENV['ENV'] == 'test'
   puts 'CodeCoverage Enabled'
   require 'simplecov'
@@ -34,4 +30,6 @@ if ENV['ENV'] == 'test'
     end
   end
 end
-=end
+
+require 'bundler/setup'
+require 'images_by_url'
