@@ -1,5 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/images_by_url.svg)](https://badge.fury.io/rb/images_by_url)
 [![Build Status](https://travis-ci.org/Mifrill/gem_images_by_url.svg?branch=master)](https://travis-ci.org/Mifrill/gem_images_by_url)
+[![CircleCI](https://circleci.com/gh/Mifrill/gem_images_by_url.svg?style=svg)](https://circleci.com/gh/Mifrill/gem_images_by_url)
 [![Quality](http://img.shields.io/codeclimate/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/Mifrill/gem_images_by_url)
 [![Coverage Status](https://img.shields.io/codeclimate/coverage/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/mifrill/gem_images_by_url)
 [![Coverage Status](https://coveralls.io/repos/github/Mifrill/gem_images_by_url/badge.svg?branch=master)](https://coveralls.io/github/Mifrill/gem_images_by_url?branch=master)
