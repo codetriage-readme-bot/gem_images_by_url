@@ -21,4 +21,5 @@ before_script:
   - gem install images_by_url
 script:
   - BROWSER_MIN=on ENV=test bundle exec rspec
+after_success:
   - bundle exec codeclimate-test-reporter
