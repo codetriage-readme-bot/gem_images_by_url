@@ -1,12 +1,14 @@
 [![Gem Version](https://badge.fury.io/rb/images_by_url.svg)](https://badge.fury.io/rb/images_by_url)
 [![Build Status](https://travis-ci.org/Mifrill/gem_images_by_url.svg?branch=master)](https://travis-ci.org/Mifrill/gem_images_by_url)
 [![CircleCI](https://circleci.com/gh/Mifrill/gem_images_by_url.svg?style=svg)](https://circleci.com/gh/Mifrill/gem_images_by_url)
+[ ![Codeship Status for Mifrill/gem_images_by_url](https://app.codeship.com/projects/17b49290-5b59-0135-037f-5a9d8b34c42a/status?branch=master)](https://app.codeship.com/projects/237509)
 [![Quality](http://img.shields.io/codeclimate/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/Mifrill/gem_images_by_url)
 [![Coverage Status](https://img.shields.io/codeclimate/coverage/github/Mifrill/gem_images_by_url.svg)](https://codeclimate.com/github/mifrill/gem_images_by_url)
 [![Coverage Status](https://coveralls.io/repos/github/Mifrill/gem_images_by_url/badge.svg?branch=master)](https://coveralls.io/github/Mifrill/gem_images_by_url?branch=master)
 [![codecov](https://codecov.io/gh/Mifrill/gem_images_by_url/branch/master/graph/badge.svg)](https://codecov.io/gh/Mifrill/gem_images_by_url)
 [![Inline docs](http://inch-ci.org/github/Mifrill/gem_images_by_url.svg?branch=master)](http://inch-ci.org/github/Mifrill/gem_images_by_url)
 [![Dependency Status](https://gemnasium.com/badges/github.com/Mifrill/gem_images_by_url.svg)](https://gemnasium.com/github.com/Mifrill/gem_images_by_url)
+[![security](https://hakiri.io/github/Mifrill/gem_images_by_url/master.svg)](https://hakiri.io/github/Mifrill/gem_images_by_url/master)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url?ref=badge_shield)
 
 # ImagesByUrl
