@@ -11,6 +11,6 @@ group :development, :test do
   # Generate code coverate reports
   gem 'codeclimate-test-reporter', '~> 1.0.8', require: false
   gem 'codecov', '~> 0.1.10', require: false
-  gem 'simplecov', '~> 0.13.0', require: false
   gem 'coveralls', '~> 0.7.2', require: false
+  gem 'simplecov', '~> 0.13.0', require: false
 end
