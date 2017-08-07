@@ -10,6 +10,7 @@
 [![Dependency Status](https://gemnasium.com/badges/github.com/Mifrill/gem_images_by_url.svg)](https://gemnasium.com/github.com/Mifrill/gem_images_by_url)
 [![security](https://hakiri.io/github/Mifrill/gem_images_by_url/master.svg)](https://hakiri.io/github/Mifrill/gem_images_by_url/master)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FMifrill%2Fgem_images_by_url?ref=badge_shield)
+[![Code Triagers Badge](https://www.codetriage.com/mifrill/gem_images_by_url/badges/users.svg)](https://www.codetriage.com/mifrill/gem_images_by_url)
 
 # ImagesByUrl
 
