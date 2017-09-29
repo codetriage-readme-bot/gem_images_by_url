@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'headless', '~> 2.3.1'
-gem 'nokogiri', '~> 1.8.0'
+gem 'nokogiri', '~> 1.8.1'
 
 group :development, :test do
   gem 'rspec', '3.6.0'
