@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby File.read(File.join(File.dirname(__FILE__), '.ruby-version')).strip
+ruby File.read(File.join(File.dirname(__FILE__), '.ruby-version'))[/(\d\.){2}\d/]
 
 # Specify your gem's dependencies in images_by_url.gemspec
 gemspec
