@@ -24,8 +24,8 @@ before_script:
   - gem install images_by_url
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
   - BROWSER_MIN=on ENV=test bundle exec rspec
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
-after_success:
-  - bundle exec codeclimate-test-reporter
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
