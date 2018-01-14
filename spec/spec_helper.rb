@@ -24,7 +24,6 @@ if ENV['ENV'] == 'test'
   end
   if ENV['CI']
     require 'codecov'
-    require 'codeclimate-test-reporter'
     SimpleCov.start 'gem'
     SimpleCov.formatter = SimpleCov::Formatter::Codecov
   else

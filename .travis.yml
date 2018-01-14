@@ -6,20 +6,26 @@ language: ruby
 cache:
   bundler: true
 rvm:
-  - 2.4.1
+  - 2.5.0
+env:
+  global:
+    - CC_TEST_REPORTER_ID=431e13a58615c311ea53fd104db553d633d96018687949d0b3423ace9b4ccf47
+    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
 addons:
   apt:
     packages:
     - xvfb
   chrome: stable
-  code_climate:
-    repo_token: 431e13a58615c311ea53fd104db553d633d96018687949d0b3423ace9b4ccf47
 before_script:
+  - gem update --system
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - google-chrome-stable --headless --no-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost &
   - gem install images_by_url
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
   - BROWSER_MIN=on ENV=test bundle exec rspec
-after_success:
-  - bundle exec codeclimate-test-reporter
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
